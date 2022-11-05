@@ -1,0 +1,52 @@
+---
+title: "Palatable Palettes: Creating and applying bespoke colour schemes to your (gg)plots"
+subtitle: "Cara Thompson | NHS-R 2022 Conference | `r verbaliseR::prettify_date('2022-11-17', uk_or_us = 'UK')`"
+from: markdown+emoji
+format:
+  revealjs: 
+    transition: none
+    slide-number: false
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/light-logo.png
+    theme: cararquarto.scss
+    footer: |
+        Slides and full code: [cararthompson.com/talks/nhsr2022-palatable-palettes](https://cararthompson.com/talks/nhsr2022-palatable-palettes)
+filters:
+ - code-visibility
+ - lightbox
+lightbox: auto
+auto-animate: true
+title-slide-attributes:
+    data-background-image: "images/dark-background.png"
+    data-background-size: stretch
+    data-background-opacity: "1"
+    data-background-color: black
+---
+
+# Intro {visibility=hidden}
+
+## Hi there :wave: ! {transition="convex-in none-out"}
+
+
+```{r setup}
+knitr::opts_chunk$set(dev = "ragg_png")
+```
+
+
+👩 Cara Thompson
+
+::: {.fragment}
+👩‍💻 Freelance data consultant specialising in dataviz and "enhanced" reproducible outputs
+:::
+
+::: {.fragment}
+💙 Helping others maximise the impact of their expertise
+:::
+
+::: {.fragment}
+🎨 Creating and applying bespoke colour schemes to your plots
+:::
+
+# Content coming soon!
