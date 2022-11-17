@@ -493,7 +493,6 @@ monochromeR::generate_palette(machine,
 
 
 
-
 ## <span style=color:#28A569>#2</span> - Let others help you
 
 - <span style=color:#808A95>Your department brand guidelines
@@ -501,7 +500,7 @@ monochromeR::generate_palette(machine,
 - <span style=color:#808A95>Take inspiration from other dataviz / art you like</span>
 - <span style=color:#808A95>Google images and "[whatever you like] palette"</span>
 - Or... start from the colour wheel and read around how best to use it
-- Using a tool like [paletton.com](https://paletton.com/) makes it easier!
+  - Using a tool like [paletton.com](https://paletton.com/) makes it easier!
 
 ::: footer
 Find out more: [blog.datawrapper.de/colors-for-data-vis-style-guides/](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
@@ -677,7 +676,7 @@ Key advantages
 - Keep colour-data pairings consistent throughout the project 
 - Package up a default palette
 - Reuse colours in the text
-- `ggtext::element_markdown()`- Level up your plots
+  - `ggtext::element_markdown()`- Level up your plots
 :::
 
 ::: footer
@@ -762,8 +761,8 @@ A few helpful resources:
 
 ::: incremental
 - Find colours - [mycolor.space](https://mycolor.space)
-- Test palette -[Chroma.js Color Palette Helper](https://www.vis4.net/palettes/#/9|s|00429d,96ffea,ffffe0|ffffe0,ff005e,93003a|1|1])
-- Text text contrast - [webaim.org/resources/contrastchecker](https://webaim.org/resources/contrastchecker/)
+- Test palette - [Chroma.js Color Palette Helper](https://www.vis4.net/palettes/#/9|s|00429d,96ffea,ffffe0|ffffe0,ff005e,93003a|1|1])
+- Test text contrast - [webaim.org/resources/contrastchecker](https://webaim.org/resources/contrastchecker/)
 :::
 
 
@@ -804,9 +803,9 @@ A few helpful resources:
 
 ::: incremental
 - Build more than you're likely to need and allow `R` to pick colours to maximise distance
-- ⚠️ It just picks e.g. #1, #5 and #9 in the order of your vector
+  - ⚠️ It just picks e.g. #1, #5 and #9 in the order of your vector
 - **Pick 2 or 3 anchor colours and let `R` interpolate**
-- `colorRampPalette()`
+  - `colorRampPalette()`
 :::
 
 
