@@ -400,6 +400,11 @@ Luckily, there are others who can help...
 - A photo + something like [imagecolorpicker.com](https://imagecolorpicker.com/) to pick out colours
 :::
 
+
+## <span style=color:#28A569>#2</span> - Let others help you
+
+![](images/photos.png)
+
 ## <span style=color:#28A569>#2</span> - Let others help you
 
 ::: {.columns}
