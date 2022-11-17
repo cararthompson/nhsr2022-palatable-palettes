@@ -12,7 +12,7 @@ format:
     logo: images/light-logo.png
     theme: cararquarto.scss
     footer: |
-        Slides and full code: [cararthompson.com/talks/nhsr2022-palatable-palettes](https://cararthompson.com/talks/nhsr2022-palatable-palettes)
+        Slides and recording: [cararthompson.com/talks/nhsr2022-palatable-palettes](https://cararthompson.com/talks/nhsr2022-palatable-palettes)
 filters:
  - code-visibility
  - lightbox
@@ -38,9 +38,14 @@ systemfonts::register_variant("EnriquetaSB", family = "Enriqueta", weight = "sem
 
 library(tidyverse)
 
+dark_text <- "#1A242F"
+
+mid_text <-  monochromeR::generate_palette(dark_text, "go_lighter", n_colours = 5)[2]
+light_text <-  monochromeR::generate_palette(dark_text, "go_lighter", n_colours = 5)[3]
+
 theme_nhsr_demo <- function(base_size = 12, 
                             dark_text = "#1A242F") {
-
+  
   mid_text <-  monochromeR::generate_palette(dark_text, "go_lighter", n_colours = 5)[2]
   light_text <-  monochromeR::generate_palette(dark_text, "go_lighter", n_colours = 5)[3]
   
@@ -60,10 +65,10 @@ theme_nhsr_demo <- function(base_size = 12,
 }
 
 penguins <- palmerpenguins::penguins %>%
-         mutate(banana_quantity = case_when(island == "Biscoe" ~ 1,
-                                            island == "Dream" ~ 0.5,
-                                            island == "Torgersen" ~ 0.1,
-                                            TRUE ~ 1))
+  mutate(banana_quantity = case_when(island == "Biscoe" ~ 1,
+                                     island == "Dream" ~ 0.5,
+                                     island == "Torgersen" ~ 0.1,
+                                     TRUE ~ 1))
 
 ```
 
@@ -94,7 +99,7 @@ penguins <- palmerpenguins::penguins %>%
 ```{r}
 penguin_plot <- ggplot(palmerpenguins::penguins %>%
                          mutate(species = as.factor(species)),
-       aes(x = species)) +
+                       aes(x = species)) +
   geom_bar(show.legend = FALSE,
            aes(colour = species,
                fill = species),
@@ -112,7 +117,7 @@ penguin_plot +
 ```{r}
 penguin_plot <- ggplot(palmerpenguins::penguins %>%
                          mutate(species = as.factor(species)),
-       aes(x = species)) +
+                       aes(x = species)) +
   geom_bar(show.legend = FALSE,
            aes(colour = species,
                fill = species),
@@ -152,11 +157,11 @@ banana_plot
 penguin_plot +
   labs(title = "They decided to go on a retreat to plan their bakes in different locations") +
   scale_fill_manual(values = c("Adelie" = "#b0a798",
-                            "Chinstrap" = "#afba49",
-                            "Gentoo" = "#d8ebfa")) +
+                               "Chinstrap" = "#afba49",
+                               "Gentoo" = "#d8ebfa")) +
   scale_colour_manual(values = c("Adelie" = "#515153",
-                                    "Chinstrap" = "#6f7453",
-                                    "Gentoo" = "#84a8cc"))
+                                 "Chinstrap" = "#6f7453",
+                                 "Gentoo" = "#84a8cc"))
 
 ```
 
@@ -168,11 +173,11 @@ penguin_plot +
 penguin_plot +
   labs(title = "Each species was allowed to invite a different mentor...") +
   scale_fill_manual(values = c("Adelie" = "#b6c3bc",
-                            "Chinstrap" = "#d45594",
-                            "Gentoo" = "#f9f0e6")) +
+                               "Chinstrap" = "#d45594",
+                               "Gentoo" = "#f9f0e6")) +
   scale_colour_manual(values = c("Adelie" = "#8fc6c9",
-                                    "Chinstrap" = "#a82f22",
-                                    "Gentoo" = "#fdbeda"))
+                                 "Chinstrap" = "#a82f22",
+                                 "Gentoo" = "#fdbeda"))
 
 ```
 
@@ -182,11 +187,11 @@ penguin_plot +
 penguin_plot +
   labs(title = "... and to choose a type of snack between practice bakes") +
   scale_fill_manual(values = c("Adelie" = "#615c59",
-                            "Chinstrap" = "#e0e6eb",
-                            "Gentoo" = "#d9762b")) +
+                               "Chinstrap" = "#e0e6eb",
+                               "Gentoo" = "#d9762b")) +
   scale_colour_manual(values = c("Adelie" = "#495152",
-                                    "Chinstrap" = "#0f1415",
-                                    "Gentoo" = "#f5d368"))
+                                 "Chinstrap" = "#0f1415",
+                                 "Gentoo" = "#f5d368"))
 
 ```
 
@@ -201,7 +206,7 @@ ggplot(filter(palmerpenguins::penguins, species == "Adelie") %>%
        aes(x = island, 
            fill = species,
            alpha = banana_quantity)) +
-    geom_bar(show.legend = FALSE,
+  geom_bar(show.legend = FALSE,
            size = 1.5,
            colour = "#FFFFFF",
            fill = "#FFFFFF",
@@ -217,6 +222,10 @@ ggplot(filter(palmerpenguins::penguins, species == "Adelie") %>%
 
 ```
 
+---
+
+![](images/penguin-bakeoff.png)
+
 
 
 # Use colour purposefully {visibility=hidden}
@@ -231,7 +240,7 @@ ggplot(filter(palmerpenguins::penguins, species == "Adelie") %>%
 
 ### <span style=color:#28A569>#4</span> - Check for accessibility
 
-### <span style=color:#28A569>#5</span> - Package up as a default palette
+### <span style=color:#28A569>#5</span> - Make use of colour interpolation
 
 
 
@@ -247,7 +256,7 @@ ggplot(filter(palmerpenguins::penguins, species == "Adelie") %>%
 
 ### <span style=color:#28A569>#4</span> - Check for accessibility
 
-### <span style=color:#28A569>#5</span> - Package up as a default palette
+### <span style=color:#28A569>#5</span> - Make use of colour interpolation
 
 
 
@@ -270,7 +279,7 @@ Make it easy for the readers to remember what is what.
 ::: {.fragment}
 
 ```{r}
-#| echo: true
+#| echo: false
 #| results: hide
 #| fig-width: 6
 #| fig-height: 1.7
@@ -289,9 +298,6 @@ monochromeR::generate_palette(machine,
 
 ::: {.column width=35%}
 
-<br>
-<br>
-<br>
 
 ::: {.fragment}
 ![](images/machine.gif)
@@ -303,15 +309,47 @@ monochromeR::generate_palette(machine,
 
 ## <span style=color:#28A569>#1</span> - Use colour purposefully 
 
+
+```{r}
+ToothGrowth %>%
+  mutate(supplement = factor(case_when(supp == "VC" ~ "Vitamin C",
+                                       supp == "OJ" ~ "Orange Juice"))) %>%
+  ggplot() +
+  geom_boxplot(aes(group = dose,
+                   y = len,
+                   alpha = dose, 
+                   fill = supplement),
+               show.legend = FALSE,
+               colour = light_text) +
+  facet_wrap( ~ supplement) +
+  scale_fill_manual(values = list(`Orange Juice` = "#e3ad0a",
+                                  `Vitamin C` = "#fd6a0d")) +
+  labs(title = "The growth of the odontoblast of the incisor teeth as a\ncriterion of vitamin C intake of the guinea pig",
+       subtitle = "Is that a win for Orange Juice? Looks like it to me!
+       ",
+       x = "Dose",
+       y = "",
+       caption = "Data from ToothGrowth") +
+  theme_nhsr_demo() +
+  theme(
+    axis.text.x = element_text(colour = light_text, size = rel(0.8)),
+    axis.title.x = element_text(margin = margin(8, 0, 0, 0)),
+    strip.background = element_rect(fill = "#F3F4F5", color = "#FFFFFF"),
+    strip.text = element_text(family = "Enriqueta", size = 14)
+  )
+
+```
+
+
+## <span style=color:#28A569>#1</span> - Use colour purposefully 
+
 Make it easy for the readers to remember what is what. 
 
-![](https://www.cararthompson.com/talks/nhsr2022-level-up/media/penguin-bakeoff.png)
+![](images/penguin-outcomes.png)
 
 ::: footer
 Find out more: [cararthompson.com/talks/nhsr2022-level-up](https://cararthompson.com/talks/nhsr2022-level-up)
 :::
-
-
 
 
 # Use colour purposefully {visibility=hidden}
@@ -326,7 +364,7 @@ Find out more: [cararthompson.com/talks/nhsr2022-level-up](https://cararthompson
 
 ### <span style=color:#28A569>#4</span>  - Check for accessibility
 
-### <span style=color:#28A569>#5</span> - Package up as a default palette
+### <span style=color:#28A569>#5</span> - Make use of colour interpolation
 
 
 
@@ -343,7 +381,7 @@ Find out more: [cararthompson.com/talks/nhsr2022-level-up](https://cararthompson
 
 ### <span style=color:#28A569>#4</span> - Check for accessibility
 
-### <span style=color:#28A569>#5</span> - Package up as a default palette
+### <span style=color:#28A569>#5</span> - Make use of colour interpolation
 
 
 
@@ -364,11 +402,9 @@ Luckily, there are others who can help...
 
 ## <span style=color:#28A569>#2</span> - Let others help you
 
-My personal favourite starting point: a photo / work of art
-
 ::: {.columns}
 ::: {.column width=50%}
-![](https://github.com/cararthompson/tidytuesdays/raw/master/plots/202210_gbbo.png)
+![](images/202210_gbbo.png)
 :::
 
 ::: {.column width=50%}
@@ -376,15 +412,13 @@ My personal favourite starting point: a photo / work of art
 
 <br>
 <br>
-![](https://ic.c4assets.com/brands/the-great-british-bake-off/series-5/episode-1/5ce2f514-5ab0-4317-b0a0-a349a13fbc68.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize})
+![](images/gbbo.jpg)
 :::
 :::
 :::
 
 
 ## <span style=color:#28A569>#2</span> - Let others help you
-
-My personal favourite starting point: a photo / work of art
 
 ::: {.columns}
 ::: {.column width=50%}
@@ -396,31 +430,83 @@ monochromeR::generate_palette(machine,
                               n_colours = 3, 
                               view_palette = TRUE)
 ```
-                  
+
 :::
 
 ::: {.column width=50%}
 ::: {.fragment}
-![](https://indatalabs.com/wp-content/uploads/2017/10/1060x600-2a681215b158ff0ad669323aae1836fe.jpg)
+![](images/ai.jpg)
 :::
 :::
+:::
+
+
+
+## <span style=color:#28A569>#2</span> - Let others help you
+
+::: {.columns}
+::: {.column width=50%}
+
+![](images/penguin-outcomes.png)
+
+:::
+
+::: {.column width=50%}
+::: {.fragment}
+![](images/bananas.png)
+:::
+:::
+:::
+
+
+## <span style=color:#28A569>#2</span> - Let others help you
+
+- <span style=color:#808A95>Your department brand guidelines
+- <span style=color:#808A95>A photo + something like [imagecolorpicker.com](https://imagecolorpicker.com/) to pick out colours</span>
+- Take inspiration from other dataviz / art you like
+
+
+## <span style=color:#28A569>#2</span> - Let others help you
+
+![](images/d7hftxdivxxvm.cloudfront.webp)
+
+::: footer
+[www.artsy.net/artwork/leon-morrocco-untitled-jean-resting](https://www.artsy.net/artwork/leon-morrocco-untitled-jean-resting)
 :::
 
 ## <span style=color:#28A569>#2</span> - Let others help you
 
-- Your department brand guidelines
-- A photo + something like [imagecolorpicker.com](https://imagecolorpicker.com/) to pick out colours
+- <span style=color:#808A95>Your department brand guidelines
+- <span style=color:#808A95>A photo + something like [imagecolorpicker.com](https://imagecolorpicker.com/) to pick out colours</span>
+- <span style=color:#808A95>Take inspiration from other dataviz / art you like</span>
+- Google images and "[whatever you like] palette"
 
-::: {.incremental}
-- Take inspiration from other dataviz / art you like
-- Google images and "[whatever you like] palette" 
-- Or... start from the colour wheel and read around how best to use it
-  - Using a tool like [paletton.com](https://paletton.com/) makes it easier!
+
+## <span style=color:#28A569>#2</span> - Let others help you
+
+![](images/birmingham.webp)
+
+
+::: footer
+[www.drawmycity.co.uk/product/the-birmingham-colour-palette-1](https://www.drawmycity.co.uk/product/the-birmingham-colour-palette-1)
 :::
+
+
+
+
+## <span style=color:#28A569>#2</span> - Let others help you
+
+- <span style=color:#808A95>Your department brand guidelines
+- <span style=color:#808A95>A photo + something like [imagecolorpicker.com](https://imagecolorpicker.com/) to pick out colours</span>
+- <span style=color:#808A95>Take inspiration from other dataviz / art you like</span>
+- <span style=color:#808A95>Google images and "[whatever you like] palette"</span>
+- Or... start from the colour wheel and read around how best to use it
+- Using a tool like [paletton.com](https://paletton.com/) makes it easier!
 
 ::: footer
 Find out more: [blog.datawrapper.de/colors-for-data-vis-style-guides/](https://blog.datawrapper.de/colors-for-data-vis-style-guides/)
 :::
+
 
 
 # Apply using a named vector {visibility=hidden}
@@ -460,13 +546,17 @@ Once you've found your colours, the quick fix...
 ```{r}
 #| echo: true
 #| output-location: column-fragment
-#| code-line-numbers: "7-9"
+#| code-line-numbers: "9-11"
+#| fig-width: 7
+#| fig-height: 6
 ggplot(penguins, 
        aes(x = bill_depth_mm,
            y = bill_length_mm,
            colour = species)) +
-  geom_point() +
-  theme_minimal() +
+  geom_point(size = 5) +
+  labs(x = "Baking duration",
+       y = "Yumminess") +
+  theme_nhsr_demo() +
   scale_colour_manual(values = c("#89973d", 
                                  "#e8b92f", 
                                  "#a45e41"))
@@ -481,7 +571,9 @@ ggplot(penguins,
 ```{r}
 #| echo: true
 #| output-location: column
-#| code-line-numbers: "2-8,14-16"
+#| code-line-numbers: "2-8,16-18"
+#| fig-width: 7
+#| fig-height: 6
 ggplot(penguins %>% 
          # Oh, that should be a factor, 
          # let me fix that for you!
@@ -493,8 +585,10 @@ ggplot(penguins %>%
        aes(x = bill_depth_mm,
            y = bill_length_mm,
            colour = species)) +
-  geom_point() +
-  theme_minimal() +
+  geom_point(size = 5) + 
+  labs(x = "Baking duration",
+       y = "Yumminess") +
+  theme_nhsr_demo() +
   scale_colour_manual(values = c("#89973d", 
                                  "#e8b92f", 
                                  "#a45e41"))
@@ -507,7 +601,8 @@ ggplot(penguins %>%
 What is going on? 
 
 ::: fragment
-> The values will be matched in order (usually alphabetical) with the limits of the scale, or with breaks if provided. If this is a named vector, then the values will be matched based on the names instead. Data values that don't match will be given na.value.
+> The values will be matched **in order** (usually alphabetical) with the limits of the scale, or with breaks if provided. 
+> If this is a named vector, then the values will be matched based on the names instead. Data values that don't match will be given `na.value`.
 
 :::
 
@@ -518,7 +613,9 @@ Create a named vector
 ```{r}
 #| echo: true
 #| output-location: column
-#| code-line-numbers: "1-3|5,8,11"
+#| code-line-numbers: "1-3|5,8,13"
+#| fig-width: 7
+#| fig-height: 6
 banana_colours <- c("Adelie" = "#89973d",
                     "Chinstrap" = "#e8b92f",
                     "Gentoo" = "#a45e41")
@@ -527,8 +624,10 @@ ggplot(penguins,
        aes(x = bill_depth_mm,
            y = bill_length_mm,
            colour = species)) +
-  geom_point() +
-  theme_minimal() +
+  geom_point(size = 5) +
+  labs(x = "Baking duration",
+       y = "Yumminess") +
+  theme_nhsr_demo() +
   scale_colour_manual(values = banana_colours)
 
 ```
@@ -541,7 +640,9 @@ Create a named vector
 ```{r}
 #| echo: true
 #| output-location: column
-#| code-line-numbers: "5-12,18"
+#| code-line-numbers: "5-12,20"
+#| fig-width: 7
+#| fig-height: 6
 banana_colours <- c("Adelie" = "#89973d",
                     "Chinstrap" = "#e8b92f",
                     "Gentoo" = "#a45e41")
@@ -557,8 +658,10 @@ ggplot(penguins %>%
        aes(x = bill_depth_mm,
            y = bill_length_mm,
            colour = species)) +
-  geom_point() +
-  theme_minimal() +
+  geom_point(size = 5) +
+  labs(x = "Baking duration",
+       y = "Yumminess") +
+  theme_nhsr_demo() +
   scale_colour_manual(values = banana_colours)
 
 ```
@@ -572,35 +675,16 @@ Key advantages
 ::: incremental
 - Know the colours are applied to the right data points!
 - Keep colour-data pairings consistent throughout the project 
-  - Package up a default palette (more on this later!)
+- Package up a default palette
 - Reuse colours in the text
-  - `ggtext::element_markdown()`- Level up your plots
+- `ggtext::element_markdown()`- Level up your plots
 :::
-  
+
 ::: footer
 Find out more: [cararthompson.com/talks/nhsr2022-level-up](https://cararthompson.com/talks/nhsr2022-level-up)
 :::
 
 ## <span style=color:#28A569>#3</span> - Apply colours using a named vector
-
-> What if I don't know how many colours I need?
-
-::: incremental
-- Build more than you're likely to need and allow `R` to pick them to maximise distance
-  - ⚠️ It just picks e.g. #1, #4 and #9 in the order of your vector
-- **Pick 2 or 3 anchor colours and let `R` interpolate**
-  - Keeps "low", "mid" and "high" consistent
-:::
-
-
-<!-- Demo with Claire (Forum + Ophelia) colours: -->
-<!-- 1, 3, 5, 9 <- keep same vibe  -->
-
-
-<!-- scale_colour_steps2 edac00 c0a7b2 624063 -->
-<!-- https://fleming.qi-cms.com/media/w720/news_listing/1.%20untitled%20(jean%20resting)_oil%20on%20canvas%20copy.jpg -->
-
-<!-- scale_colour_gradient2 -->
 
 
 ## {auto-animate=true background=#2C3D4F}
@@ -693,7 +777,7 @@ A few helpful resources:
 
 ### <span style=color:#28A569>#4</span> - Check for accessibility {.imitate-title}
 
-### <span style=color:#28A569>#5</span> - Package up as a default palette
+### <span style=color:#28A569>#5</span> - Make use of colour interpolation
 
 
 
@@ -708,42 +792,195 @@ A few helpful resources:
 
 ### <span style=color:#28A569>#4</span> - Check for accessibility {.faded-small}
 
-### <span style=color:#28A569>#5</span> - Package up as a default palette {.imitate-title}
+### <span style=color:#28A569>#5</span> - Make use of colour interpolation {.imitate-title}
 
 
-##  <span style=color:#28A569>#5</span> - Package up as a default palette
-
-```{r}
-#| echo: true
-carartemplates::carar_colours()
-```
+##  <span style=color:#28A569>#5</span> - Make use of colour interpolation
 
 ::: fragment
-```{r}
-#| echo: true
-monochromeR::view_palette(carartemplates::carar_colours())
-```
+> What if I don't know how many colours I need?
+
+:::
+
+::: incremental
+- Build more than you're likely to need and allow `R` to pick colours to maximise distance
+- ⚠️ It just picks e.g. #1, #5 and #9 in the order of your vector
+- **Pick 2 or 3 anchor colours and let `R` interpolate**
+- `colorRampPalette()`
 :::
 
 
-##  <span style=color:#28A569>#5</span> - Package up as a default palette
-
+##  <span style=color:#28A569>#5</span> - Make use of colour interpolation
 
 ```{r}
 #| echo: true
-ivac::ivac_default_palette
+#| output-location: column
+#| results: hide
+#| fig-width: 7.1
+#| fig-height: 6.5
+#| code-line-numbers: "1|12-14"
+my_anchor_colours <- c("green", "blue", "purple")
+
+palmerpenguins::penguins %>%
+  mutate(island_fm = paste0(island, sex)) %>%
+  ggplot() + 
+  geom_point(aes(x = bill_length_mm,
+                 y = bill_depth_mm,
+                 colour = island_fm,
+                 size = body_mass_g),
+             show.legend = FALSE) +
+  theme_nhsr_demo() +
+  scale_color_manual(
+    values = colorRampPalette(
+      my_anchor_colours)(9))
+
 ```
 
 
-::: fragment
+##  <span style=color:#28A569>#5</span> - Make use of colour interpolation
+
+[imagecolorpicker.com](https://imagecolorpicker.com/) + [Chroma.js Color Palette Helper](https://www.vis4.net/palettes)
+
+![](images/d7hftxdivxxvm.cloudfront.webp){width=80%}
+
+##  <span style=color:#28A569>#5</span> - Make use of colour interpolation
+
 ```{r}
-monochromeR::view_palette(ivac::ivac_default_palette)
+#| echo: true
+#| output-location: column
+#| results: hide
+#| fig-width: 7.1
+#| fig-height: 6.5
+#| code-line-numbers: "1|11-13"
+my_anchor_colours <- c("#4f3c78", "#d3970a", "#c0979c")
+
+palmerpenguins::penguins %>%
+  ggplot() + 
+  geom_point(aes(x = bill_length_mm,
+                 y = bill_depth_mm,
+                 colour = island,
+                 size = body_mass_g),
+             show.legend = FALSE) +
+  theme_nhsr_demo() +
+  scale_color_manual(
+    values = colorRampPalette(
+      my_anchor_colours)(3))
+
+```
+
+
+
+##  <span style=color:#28A569>#5</span> - Make use of colour interpolation
+
+```{r}
+#| echo: true
+#| output-location: column
+#| results: hide
+#| fig-width: 7.1
+#| fig-height: 6.5
+#| code-line-numbers: "12-14"
+my_anchor_colours <- c("#4f3c78", "#d3970a", "#c0979c")
+
+palmerpenguins::penguins %>%
+  mutate(island_fm = paste0(island, sex)) %>%
+  ggplot() + 
+  geom_point(aes(x = bill_length_mm,
+                 y = bill_depth_mm,
+                 colour = island_fm,
+                 size = body_mass_g),
+             show.legend = FALSE) +
+  theme_nhsr_demo() +
+  scale_color_manual(
+    values = colorRampPalette(
+      my_anchor_colours)(9))
+
+```
+
+
+
+##  <span style=color:#28A569>#5</span> - Make use of colour interpolation
+
+```{r}
+#| echo: true
+#| output-location: column
+#| results: hide
+#| fig-width: 7.1
+#| fig-height: 6.5
+#| code-line-numbers: "1"
+my_anchor_colours <- c("#375248", "#d3970a", "#7691b1")
+
+palmerpenguins::penguins %>%
+  mutate(island_fm = paste0(island, sex)) %>%
+  ggplot() + 
+  geom_point(aes(x = bill_length_mm,
+                 y = bill_depth_mm,
+                 colour = island_fm,
+                 size = body_mass_g),
+             show.legend = FALSE) +
+  theme_nhsr_demo() +
+  scale_color_manual(
+    values = colorRampPalette(
+      my_anchor_colours)(9))
+
+```
+
+
+##  <span style=color:#28A569>#5</span> - Make use of colour interpolation
+
+There are only so many colours you can use in a plot!
+
+::: {.columns}
+
+::: {.column width=50%}
+
+::: {.fragment}
+- Could other approaches work (facets?)
+:::
+::: {.fragment}
+- Try using different shapes (you can use letters / emoji!)
+:::
+:::
+
+::: {.column width=50%}
+::: fragment
+![](images/202007c_pets.gif)
+:::
+:::
+:::
+
+::: footer
+[[github.com/cararthompson/tidytuesdays](https://github.com/cararthompson/tidytuesdays#2020-07---animals-and-pets)
+:::
+
+
+
+## There's so much more we could talk about!
+
+::: fragment
+- Packaging up your palette for easy reuse `carartemplates::carar_colours()`
+
+```{r}
+#| fig-height: 0.5
+carartemplates::carar_colours() %>%
+  monochromeR::view_palette()
+
 ```
 :::
 
-##  <span style=color:#28A569>#5</span> - Package up as a default palette
+::: fragment
+- Creating your own `scale_nhsdemo_colour/fill()` functions
+- You can even have several palettes! `scale_nhsdemo_colour("Birmingham")`?
+:::
 
+::: fragment
+- Basing your "dark text" colour on the central / most important colour in your palette
+:::
 
+::: fragment
+<center>
+**... but we can talk about this some other time!**
+</center>
+:::
 
 
 ## Five tips for creating and applying bespoke colour palettes {background=#2C3D4F}
@@ -756,10 +993,13 @@ monochromeR::view_palette(ivac::ivac_default_palette)
 
 ### <span style=color:#28A569>#4</span> - Check for accessibility
 
-### <span style=color:#28A569>#5</span> - Package up as a default palette
+### <span style=color:#28A569>#5</span> - Make use of colour interpolation
 
 <br>
 
 ::: fragment
-### <span style=color:#28A569>Over to you</span>
+<center>
+### <span style=color:#28A569>Happy plotting!</span>
+### @cararthompson
+</center>
 :::

@@ -454,7 +454,11 @@
 <section id="the-great-penguin-bake-off-6" class="slide level2">
 <h2>The Great Penguin Bake Off</h2>
 
-<img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch quarto-figure-center"></section></section>
+<img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<section class="slide level2">
+
+
+<img data-src="images/penguin-bakeoff.png" class="r-stretch quarto-figure-center"></section></section>
 <section>
 
 <section id="section" class="slide level2" data-auto-animate="true" data-background="#2C3D4F">
@@ -463,7 +467,7 @@
 <h3 id="let-others-help-you"><span style="color:#28A569">#2</span> - Let others help you</h3>
 <h3 id="apply-colours-using-a-named-vector"><span style="color:#28A569">#3</span> - Apply colours using a named vector</h3>
 <h3 id="check-for-accessibility"><span style="color:#28A569">#4</span> - Check for accessibility</h3>
-<h3 id="package-up-as-a-default-palette"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
+<h3 id="make-use-of-colour-interpolation"><span style="color:#28A569">#5</span> - Make use of colour interpolation</h3>
 </section></section>
 <section>
 
@@ -473,7 +477,7 @@
 <h3 id="let-others-help-you-1"><span style="color:#28A569">#2</span> - Let others help you</h3>
 <h3 id="apply-colours-using-a-named-vector-1"><span style="color:#28A569">#3</span> - Apply colours using a named vector</h3>
 <h3 id="check-for-accessibility-1"><span style="color:#28A569">#4</span> - Check for accessibility</h3>
-<h3 id="package-up-as-a-default-palette-1"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
+<h3 id="make-use-of-colour-interpolation-1"><span style="color:#28A569">#5</span> - Make use of colour interpolation</h3>
 </section>
 <section id="use-colour-purposefully-4" class="slide level2">
 <h2><span style="color:#28A569">#1</span> - Use colour purposefully</h2>
@@ -489,27 +493,20 @@
 <div class="column" style="width:60%;">
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>machine <span class="ot">&lt;-</span> <span class="st">"#02122b"</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a>human <span class="ot">&lt;-</span>  <span class="st">"#fe7374"</span> <span class="do">##e27c89"# "#f47e7f" # "#e0878a"</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>monochromeR<span class="sc">::</span><span class="fu">generate_palette</span>(machine, </span>
-<span id="cb1-4"><a href="#cb1-4"></a>                              <span class="at">blend_colour =</span> human, </span>
-<span id="cb1-5"><a href="#cb1-5"></a>                              <span class="at">n_colours =</span> <span class="dv">3</span>, </span>
-<span id="cb1-6"><a href="#cb1-6"></a>                              <span class="at">view_palette =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-8-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-8-1.png" width="576"></a></p>
+<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-8-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-8-1.png" width="576"></a></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
 </div><div class="column" style="width:35%;">
-<p><br> <br> <br></p>
 <div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/machine.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="images/machine.gif"></a></p>
+<p><a href="images/machine.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/machine.gif"></a></p>
 </figure>
 </div>
 </div>
@@ -518,9 +515,13 @@
 </section>
 <section id="use-colour-purposefully-5" class="slide level2">
 <h2><span style="color:#28A569">#1</span> - Use colour purposefully</h2>
+
+<img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<section id="use-colour-purposefully-6" class="slide level2">
+<h2><span style="color:#28A569">#1</span> - Use colour purposefully</h2>
 <p>Make it easy for the readers to remember what is what.</p>
 
-<img data-src="https://www.cararthompson.com/talks/nhsr2022-level-up/media/penguin-bakeoff.png" class="r-stretch quarto-figure-center"><div class="footer">
+<img data-src="images/penguin-outcomes.png" class="r-stretch quarto-figure-center"><div class="footer">
 <p>Find out more: <a href="https://cararthompson.com/talks/nhsr2022-level-up">cararthompson.com/talks/nhsr2022-level-up</a></p>
 </div>
 </section></section>
@@ -528,21 +529,21 @@
 
 <section id="section-2" class="slide level2" data-auto-animate="true" data-background="#2C3D4F">
 <h2 data-id="quarto-animate-title"></h2>
-<h3 class="imitate-title" id="use-colour-purposefully-7"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
+<h3 class="imitate-title" id="use-colour-purposefully-8"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
 <h3 id="let-others-help-you-2"><span style="color:#28A569">#2</span> - Let others help you</h3>
 <h3 id="apply-colours-using-a-named-vector-2"><span style="color:#28A569">#3</span> - Apply colours using a named vector</h3>
 <h3 id="check-for-accessibility-2"><span style="color:#28A569">#4</span> - Check for accessibility</h3>
-<h3 id="package-up-as-a-default-palette-2"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
+<h3 id="make-use-of-colour-interpolation-2"><span style="color:#28A569">#5</span> - Make use of colour interpolation</h3>
 </section></section>
 <section>
 
 <section id="section-3" class="slide level2" data-auto-animate="true" data-background="#2C3D4F">
 <h2 data-id="quarto-animate-title"></h2>
-<h3 class="faded-small" id="use-colour-purposefully-8"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
+<h3 class="faded-small" id="use-colour-purposefully-9"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
 <h3 class="imitate-title" id="let-others-help-you-4"><span style="color:#28A569">#2</span> - Let others help you</h3>
 <h3 id="apply-colours-using-a-named-vector-3"><span style="color:#28A569">#3</span> - Apply colours using a named vector</h3>
 <h3 id="check-for-accessibility-3"><span style="color:#28A569">#4</span> - Check for accessibility</h3>
-<h3 id="package-up-as-a-default-palette-3"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
+<h3 id="make-use-of-colour-interpolation-3"><span style="color:#28A569">#5</span> - Make use of colour interpolation</h3>
 </section>
 <section id="let-others-help-you-5" class="slide level2">
 <h2><span style="color:#28A569">#2</span> - Let others help you</h2>
@@ -561,31 +562,29 @@
 </section>
 <section id="let-others-help-you-6" class="slide level2">
 <h2><span style="color:#28A569">#2</span> - Let others help you</h2>
-<p>My personal favourite starting point: a photo / work of art</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://github.com/cararthompson/tidytuesdays/raw/master/plots/202210_gbbo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="https://github.com/cararthompson/tidytuesdays/raw/master/plots/202210_gbbo.png"></a></p>
+<p><a href="images/202210_gbbo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/202210_gbbo.png"></a></p>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="fragment">
-<p><br> <br> <a href="https://ic.c4assets.com/brands/the-great-british-bake-off/series-5/episode-1/5ce2f514-5ab0-4317-b0a0-a349a13fbc68.jpg?interpolation=progressive-bicubic&amp;output-format=jpeg&amp;output-quality=90%7B&amp;resize%7D" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="https://ic.c4assets.com/brands/the-great-british-bake-off/series-5/episode-1/5ce2f514-5ab0-4317-b0a0-a349a13fbc68.jpg?interpolation=progressive-bicubic&amp;output-format=jpeg&amp;output-quality=90%7B&amp;resize%7D"></a></p>
+<p><br> <br> <a href="images/gbbo.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/gbbo.jpg"></a></p>
 </div>
 </div>
 </div>
 </section>
 <section id="let-others-help-you-7" class="slide level2">
 <h2><span style="color:#28A569">#2</span> - Let others help you</h2>
-<p>My personal favourite starting point: a photo / work of art</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-9-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></a></p>
+<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-10-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></a></p>
 </figure>
 </div>
 </div>
@@ -594,7 +593,7 @@
 <div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://indatalabs.com/wp-content/uploads/2017/10/1060x600-2a681215b158ff0ad669323aae1836fe.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="https://indatalabs.com/wp-content/uploads/2017/10/1060x600-2a681215b158ff0ad669323aae1836fe.jpg"></a></p>
+<p><a href="images/ai.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="images/ai.jpg"></a></p>
 </figure>
 </div>
 </div>
@@ -603,20 +602,65 @@
 </section>
 <section id="let-others-help-you-8" class="slide level2">
 <h2><span style="color:#28A569">#2</span> - Let others help you</h2>
-<ul>
-<li>Your department brand guidelines</li>
-<li>A photo + something like <a href="https://imagecolorpicker.com/">imagecolorpicker.com</a> to pick out colours</li>
-</ul>
-<div>
-<ul>
-<li class="fragment">Take inspiration from other dataviz / art you like</li>
-<li class="fragment">Google images and “[whatever you like] palette”</li>
-<li class="fragment">Or… start from the colour wheel and read around how best to use it
-<ul>
-<li class="fragment">Using a tool like <a href="https://paletton.com/">paletton.com</a> makes it easier!</li>
-</ul></li>
-</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/penguin-outcomes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="images/penguin-outcomes.png"></a></p>
+</figure>
 </div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/bananas.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="images/bananas.png"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="let-others-help-you-9" class="slide level2">
+<h2><span style="color:#28A569">#2</span> - Let others help you</h2>
+<ul>
+<li><span style="color:#808A95">Your department brand guidelines</span></li>
+<li><span style="color:#808A95">A photo + something like <a href="https://imagecolorpicker.com/">imagecolorpicker.com</a> to pick out colours</span></li>
+<li>Take inspiration from other dataviz / art you like</li>
+</ul>
+</section>
+<section id="let-others-help-you-10" class="slide level2">
+<h2><span style="color:#28A569">#2</span> - Let others help you</h2>
+
+<img data-src="images/d7hftxdivxxvm.cloudfront.webp" class="r-stretch quarto-figure-center"><div class="footer">
+<p><a href="https://www.artsy.net/artwork/leon-morrocco-untitled-jean-resting">www.artsy.net/artwork/leon-morrocco-untitled-jean-resting</a></p>
+</div>
+</section>
+<section id="let-others-help-you-11" class="slide level2">
+<h2><span style="color:#28A569">#2</span> - Let others help you</h2>
+<ul>
+<li><span style="color:#808A95">Your department brand guidelines</span></li>
+<li><span style="color:#808A95">A photo + something like <a href="https://imagecolorpicker.com/">imagecolorpicker.com</a> to pick out colours</span></li>
+<li><span style="color:#808A95">Take inspiration from other dataviz / art you like</span></li>
+<li>Google images and “[whatever you like] palette”</li>
+</ul>
+</section>
+<section id="let-others-help-you-12" class="slide level2">
+<h2><span style="color:#28A569">#2</span> - Let others help you</h2>
+
+<img data-src="images/birmingham.webp" class="r-stretch quarto-figure-center"><div class="footer">
+<p><a href="https://www.drawmycity.co.uk/product/the-birmingham-colour-palette-1">www.drawmycity.co.uk/product/the-birmingham-colour-palette-1</a></p>
+</div>
+</section>
+<section id="let-others-help-you-13" class="slide level2">
+<h2><span style="color:#28A569">#2</span> - Let others help you</h2>
+<ul>
+<li><span style="color:#808A95">Your department brand guidelines</span></li>
+<li><span style="color:#808A95">A photo + something like <a href="https://imagecolorpicker.com/">imagecolorpicker.com</a> to pick out colours</span></li>
+<li><span style="color:#808A95">Take inspiration from other dataviz / art you like</span></li>
+<li><span style="color:#808A95">Google images and “[whatever you like] palette”</span></li>
+<li>Or… start from the colour wheel and read around how best to use it</li>
+<li>Using a tool like <a href="https://paletton.com/">paletton.com</a> makes it easier!</li>
+</ul>
 <div class="footer">
 <p>Find out more: <a href="https://blog.datawrapper.de/colors-for-data-vis-style-guides/">blog.datawrapper.de/colors-for-data-vis-style-guides/</a></p>
 </div>
@@ -625,39 +669,41 @@
 
 <section id="section-4" class="slide level2" data-auto-animate="true" data-background="#2C3D4F">
 <h2 data-id="quarto-animate-title"></h2>
-<h3 class="faded-small" id="use-colour-purposefully-9"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
-<h3 class="imitate-title" id="let-others-help-you-9"><span style="color:#28A569">#2</span> - Let others help you</h3>
+<h3 class="faded-small" id="use-colour-purposefully-10"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
+<h3 class="imitate-title" id="let-others-help-you-14"><span style="color:#28A569">#2</span> - Let others help you</h3>
 <h3 id="apply-colours-using-a-named-vector-4"><span style="color:#28A569">#3</span> - Apply colours using a named vector</h3>
 <h3 id="check-for-accessibility-4"><span style="color:#28A569">#4</span> - Check for accessibility</h3>
-<h3 id="package-up-as-a-default-palette-4"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
+<h3 id="package-up-as-a-default-palette"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
 </section>
 <section id="section-5" class="slide level2" data-auto-animate="true" data-background="#2C3D4F">
 <h2 data-id="quarto-animate-title"></h2>
-<h3 class="faded-small" id="use-colour-purposefully-10"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
-<h3 class="faded-small" id="let-others-help-you-10"><span style="color:#28A569">#2</span> - Let others help you</h3>
+<h3 class="faded-small" id="use-colour-purposefully-11"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
+<h3 class="faded-small" id="let-others-help-you-15"><span style="color:#28A569">#2</span> - Let others help you</h3>
 <h3 class="imitate-title" id="apply-colours-using-a-named-vector-5"><span style="color:#28A569">#3</span> - Apply colours using a named vector</h3>
 <h3 id="check-for-accessibility-5"><span style="color:#28A569">#4</span> - Check for accessibility</h3>
-<h3 id="package-up-as-a-default-palette-5"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
+<h3 id="package-up-as-a-default-palette-1"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
 </section>
 <section id="apply-colours-using-a-named-vector-6" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"><span style="color:#28A569">#3</span> - Apply colours using a named vector</h2>
 <p>Once you’ve found your colours, the quick fix…</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="7-9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb2-1" class="hljs-ln-code"><a href="#cb2-1"></a><span class="fu">ggplot</span>(penguins, </span>
-<span id="cb2-2" class="hljs-ln-code"><a href="#cb2-2"></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_depth_mm,</span>
-<span id="cb2-3" class="hljs-ln-code"><a href="#cb2-3"></a>           <span class="at">y =</span> bill_length_mm,</span>
-<span id="cb2-4" class="hljs-ln-code"><a href="#cb2-4"></a>           <span class="at">colour =</span> species)) <span class="sc">+</span></span>
-<span id="cb2-5" class="hljs-ln-code"><a href="#cb2-5"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb2-6" class="hljs-ln-code"><a href="#cb2-6"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb2-7" class="hljs-ln-code"><a href="#cb2-7"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#89973d"</span>, </span>
-<span id="cb2-8" class="hljs-ln-code"><a href="#cb2-8"></a>                                 <span class="st">"#e8b92f"</span>, </span>
-<span id="cb2-9" class="hljs-ln-code"><a href="#cb2-9"></a>                                 <span class="st">"#a45e41"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="9-11"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb1-1" class="hljs-ln-code"><a href="#cb1-1"></a><span class="fu">ggplot</span>(penguins, </span>
+<span id="cb1-2" class="hljs-ln-code"><a href="#cb1-2"></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_depth_mm,</span>
+<span id="cb1-3" class="hljs-ln-code"><a href="#cb1-3"></a>           <span class="at">y =</span> bill_length_mm,</span>
+<span id="cb1-4" class="hljs-ln-code"><a href="#cb1-4"></a>           <span class="at">colour =</span> species)) <span class="sc">+</span></span>
+<span id="cb1-5" class="hljs-ln-code"><a href="#cb1-5"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb1-6" class="hljs-ln-code"><a href="#cb1-6"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Baking duration"</span>,</span>
+<span id="cb1-7" class="hljs-ln-code"><a href="#cb1-7"></a>       <span class="at">y =</span> <span class="st">"Yumminess"</span>) <span class="sc">+</span></span>
+<span id="cb1-8" class="hljs-ln-code"><a href="#cb1-8"></a>  <span class="fu">theme_nhsr_demo</span>() <span class="sc">+</span></span>
+<span id="cb1-9" class="hljs-ln-code"><a href="#cb1-9"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#89973d"</span>, </span>
+<span id="cb1-10" class="hljs-ln-code"><a href="#cb1-10"></a>                                 <span class="st">"#e8b92f"</span>, </span>
+<span id="cb1-11" class="hljs-ln-code"><a href="#cb1-11"></a>                                 <span class="st">"#a45e41"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-10-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></a></p>
+<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-11-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-11-1.png" width="672"></a></p>
 </figure>
 </div>
 </div>
@@ -669,27 +715,29 @@
 <p>… might be a dangerous shortcut!</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="2-8,14-16"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1"></a><span class="fu">ggplot</span>(penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb3-2" class="hljs-ln-code"><a href="#cb3-2"></a>         <span class="co"># Oh, that should be a factor, </span></span>
-<span id="cb3-3" class="hljs-ln-code"><a href="#cb3-3"></a>         <span class="co"># let me fix that for you!</span></span>
-<span id="cb3-4" class="hljs-ln-code"><a href="#cb3-4"></a>         <span class="fu">mutate</span>(<span class="at">species =</span> </span>
-<span id="cb3-5" class="hljs-ln-code"><a href="#cb3-5"></a>                  <span class="fu">factor</span>(species, </span>
-<span id="cb3-6" class="hljs-ln-code"><a href="#cb3-6"></a>                         <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Chinstrap"</span>, </span>
-<span id="cb3-7" class="hljs-ln-code"><a href="#cb3-7"></a>                                    <span class="st">"Gentoo"</span>, </span>
-<span id="cb3-8" class="hljs-ln-code"><a href="#cb3-8"></a>                                    <span class="st">"Adelie"</span>))), </span>
-<span id="cb3-9" class="hljs-ln-code"><a href="#cb3-9"></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_depth_mm,</span>
-<span id="cb3-10" class="hljs-ln-code"><a href="#cb3-10"></a>           <span class="at">y =</span> bill_length_mm,</span>
-<span id="cb3-11" class="hljs-ln-code"><a href="#cb3-11"></a>           <span class="at">colour =</span> species)) <span class="sc">+</span></span>
-<span id="cb3-12" class="hljs-ln-code"><a href="#cb3-12"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb3-13" class="hljs-ln-code"><a href="#cb3-13"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb3-14" class="hljs-ln-code"><a href="#cb3-14"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#89973d"</span>, </span>
-<span id="cb3-15" class="hljs-ln-code"><a href="#cb3-15"></a>                                 <span class="st">"#e8b92f"</span>, </span>
-<span id="cb3-16" class="hljs-ln-code"><a href="#cb3-16"></a>                                 <span class="st">"#a45e41"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="2-8,16-18"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb2-1" class="hljs-ln-code"><a href="#cb2-1"></a><span class="fu">ggplot</span>(penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb2-2" class="hljs-ln-code"><a href="#cb2-2"></a>         <span class="co"># Oh, that should be a factor, </span></span>
+<span id="cb2-3" class="hljs-ln-code"><a href="#cb2-3"></a>         <span class="co"># let me fix that for you!</span></span>
+<span id="cb2-4" class="hljs-ln-code"><a href="#cb2-4"></a>         <span class="fu">mutate</span>(<span class="at">species =</span> </span>
+<span id="cb2-5" class="hljs-ln-code"><a href="#cb2-5"></a>                  <span class="fu">factor</span>(species, </span>
+<span id="cb2-6" class="hljs-ln-code"><a href="#cb2-6"></a>                         <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Chinstrap"</span>, </span>
+<span id="cb2-7" class="hljs-ln-code"><a href="#cb2-7"></a>                                    <span class="st">"Gentoo"</span>, </span>
+<span id="cb2-8" class="hljs-ln-code"><a href="#cb2-8"></a>                                    <span class="st">"Adelie"</span>))), </span>
+<span id="cb2-9" class="hljs-ln-code"><a href="#cb2-9"></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_depth_mm,</span>
+<span id="cb2-10" class="hljs-ln-code"><a href="#cb2-10"></a>           <span class="at">y =</span> bill_length_mm,</span>
+<span id="cb2-11" class="hljs-ln-code"><a href="#cb2-11"></a>           <span class="at">colour =</span> species)) <span class="sc">+</span></span>
+<span id="cb2-12" class="hljs-ln-code"><a href="#cb2-12"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span> </span>
+<span id="cb2-13" class="hljs-ln-code"><a href="#cb2-13"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Baking duration"</span>,</span>
+<span id="cb2-14" class="hljs-ln-code"><a href="#cb2-14"></a>       <span class="at">y =</span> <span class="st">"Yumminess"</span>) <span class="sc">+</span></span>
+<span id="cb2-15" class="hljs-ln-code"><a href="#cb2-15"></a>  <span class="fu">theme_nhsr_demo</span>() <span class="sc">+</span></span>
+<span id="cb2-16" class="hljs-ln-code"><a href="#cb2-16"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#89973d"</span>, </span>
+<span id="cb2-17" class="hljs-ln-code"><a href="#cb2-17"></a>                                 <span class="st">"#e8b92f"</span>, </span>
+<span id="cb2-18" class="hljs-ln-code"><a href="#cb2-18"></a>                                 <span class="st">"#a45e41"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-11-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></a></p>
+<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-12-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-12-1.png" width="672"></a></p>
 </figure>
 </div>
 </div>
@@ -701,7 +749,7 @@
 <p>What is going on?</p>
 <div class="fragment">
 <blockquote>
-<p>The values will be matched in order (usually alphabetical) with the limits of the scale, or with breaks if provided. If this is a named vector, then the values will be matched based on the names instead. Data values that don’t match will be given na.value.</p>
+<p>The values will be matched <strong>in order</strong> (usually alphabetical) with the limits of the scale, or with breaks if provided. If this is a named vector, then the values will be matched based on the names instead. Data values that don’t match will be given <code>na.value</code>.</p>
 </blockquote>
 </div>
 </section>
@@ -710,22 +758,24 @@
 <p>Create a named vector</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb4" data-code-line-numbers="1-3|5,8,11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>banana_colours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Adelie"</span> <span class="ot">=</span> <span class="st">"#89973d"</span>,</span>
-<span id="cb4-2"><a href="#cb4-2"></a>                    <span class="st">"Chinstrap"</span> <span class="ot">=</span> <span class="st">"#e8b92f"</span>,</span>
-<span id="cb4-3"><a href="#cb4-3"></a>                    <span class="st">"Gentoo"</span> <span class="ot">=</span> <span class="st">"#a45e41"</span>)</span>
-<span id="cb4-4"><a href="#cb4-4"></a></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="fu">ggplot</span>(penguins,</span>
-<span id="cb4-6"><a href="#cb4-6"></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_depth_mm,</span>
-<span id="cb4-7"><a href="#cb4-7"></a>           <span class="at">y =</span> bill_length_mm,</span>
-<span id="cb4-8"><a href="#cb4-8"></a>           <span class="at">colour =</span> species)) <span class="sc">+</span></span>
-<span id="cb4-9"><a href="#cb4-9"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> banana_colours)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="1-3|5,8,13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>banana_colours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Adelie"</span> <span class="ot">=</span> <span class="st">"#89973d"</span>,</span>
+<span id="cb3-2"><a href="#cb3-2"></a>                    <span class="st">"Chinstrap"</span> <span class="ot">=</span> <span class="st">"#e8b92f"</span>,</span>
+<span id="cb3-3"><a href="#cb3-3"></a>                    <span class="st">"Gentoo"</span> <span class="ot">=</span> <span class="st">"#a45e41"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="fu">ggplot</span>(penguins,</span>
+<span id="cb3-6"><a href="#cb3-6"></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_depth_mm,</span>
+<span id="cb3-7"><a href="#cb3-7"></a>           <span class="at">y =</span> bill_length_mm,</span>
+<span id="cb3-8"><a href="#cb3-8"></a>           <span class="at">colour =</span> species)) <span class="sc">+</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Baking duration"</span>,</span>
+<span id="cb3-11"><a href="#cb3-11"></a>       <span class="at">y =</span> <span class="st">"Yumminess"</span>) <span class="sc">+</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a>  <span class="fu">theme_nhsr_demo</span>() <span class="sc">+</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> banana_colours)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-12-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-12-1.png" width="960"></a></p>
+<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-13-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-13-1.png" width="672"></a></p>
 </figure>
 </div>
 </div>
@@ -737,29 +787,31 @@
 <p>Create a named vector</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb5" data-code-line-numbers="5-12,18"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a>banana_colours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Adelie"</span> <span class="ot">=</span> <span class="st">"#89973d"</span>,</span>
-<span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2"></a>                    <span class="st">"Chinstrap"</span> <span class="ot">=</span> <span class="st">"#e8b92f"</span>,</span>
-<span id="cb5-3" class="hljs-ln-code"><a href="#cb5-3"></a>                    <span class="st">"Gentoo"</span> <span class="ot">=</span> <span class="st">"#a45e41"</span>)</span>
-<span id="cb5-4" class="hljs-ln-code"><a href="#cb5-4"></a></span>
-<span id="cb5-5" class="hljs-ln-code"><a href="#cb5-5"></a><span class="fu">ggplot</span>(penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb5-6" class="hljs-ln-code"><a href="#cb5-6"></a>         <span class="co"># Oh, that should be a factor, </span></span>
-<span id="cb5-7" class="hljs-ln-code"><a href="#cb5-7"></a>         <span class="co"># let me fix that for you!</span></span>
-<span id="cb5-8" class="hljs-ln-code"><a href="#cb5-8"></a>         <span class="fu">mutate</span>(<span class="at">species =</span> </span>
-<span id="cb5-9" class="hljs-ln-code"><a href="#cb5-9"></a>                  <span class="fu">factor</span>(species, </span>
-<span id="cb5-10" class="hljs-ln-code"><a href="#cb5-10"></a>                         <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Chinstrap"</span>, </span>
-<span id="cb5-11" class="hljs-ln-code"><a href="#cb5-11"></a>                                    <span class="st">"Gentoo"</span>, </span>
-<span id="cb5-12" class="hljs-ln-code"><a href="#cb5-12"></a>                                    <span class="st">"Adelie"</span>))), </span>
-<span id="cb5-13" class="hljs-ln-code"><a href="#cb5-13"></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_depth_mm,</span>
-<span id="cb5-14" class="hljs-ln-code"><a href="#cb5-14"></a>           <span class="at">y =</span> bill_length_mm,</span>
-<span id="cb5-15" class="hljs-ln-code"><a href="#cb5-15"></a>           <span class="at">colour =</span> species)) <span class="sc">+</span></span>
-<span id="cb5-16" class="hljs-ln-code"><a href="#cb5-16"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb5-17" class="hljs-ln-code"><a href="#cb5-17"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb5-18" class="hljs-ln-code"><a href="#cb5-18"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> banana_colours)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4" data-code-line-numbers="5-12,20"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a>banana_colours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Adelie"</span> <span class="ot">=</span> <span class="st">"#89973d"</span>,</span>
+<span id="cb4-2" class="hljs-ln-code"><a href="#cb4-2"></a>                    <span class="st">"Chinstrap"</span> <span class="ot">=</span> <span class="st">"#e8b92f"</span>,</span>
+<span id="cb4-3" class="hljs-ln-code"><a href="#cb4-3"></a>                    <span class="st">"Gentoo"</span> <span class="ot">=</span> <span class="st">"#a45e41"</span>)</span>
+<span id="cb4-4" class="hljs-ln-code"><a href="#cb4-4"></a></span>
+<span id="cb4-5" class="hljs-ln-code"><a href="#cb4-5"></a><span class="fu">ggplot</span>(penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb4-6" class="hljs-ln-code"><a href="#cb4-6"></a>         <span class="co"># Oh, that should be a factor, </span></span>
+<span id="cb4-7" class="hljs-ln-code"><a href="#cb4-7"></a>         <span class="co"># let me fix that for you!</span></span>
+<span id="cb4-8" class="hljs-ln-code"><a href="#cb4-8"></a>         <span class="fu">mutate</span>(<span class="at">species =</span> </span>
+<span id="cb4-9" class="hljs-ln-code"><a href="#cb4-9"></a>                  <span class="fu">factor</span>(species, </span>
+<span id="cb4-10" class="hljs-ln-code"><a href="#cb4-10"></a>                         <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Chinstrap"</span>, </span>
+<span id="cb4-11" class="hljs-ln-code"><a href="#cb4-11"></a>                                    <span class="st">"Gentoo"</span>, </span>
+<span id="cb4-12" class="hljs-ln-code"><a href="#cb4-12"></a>                                    <span class="st">"Adelie"</span>))), </span>
+<span id="cb4-13" class="hljs-ln-code"><a href="#cb4-13"></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_depth_mm,</span>
+<span id="cb4-14" class="hljs-ln-code"><a href="#cb4-14"></a>           <span class="at">y =</span> bill_length_mm,</span>
+<span id="cb4-15" class="hljs-ln-code"><a href="#cb4-15"></a>           <span class="at">colour =</span> species)) <span class="sc">+</span></span>
+<span id="cb4-16" class="hljs-ln-code"><a href="#cb4-16"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb4-17" class="hljs-ln-code"><a href="#cb4-17"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Baking duration"</span>,</span>
+<span id="cb4-18" class="hljs-ln-code"><a href="#cb4-18"></a>       <span class="at">y =</span> <span class="st">"Yumminess"</span>) <span class="sc">+</span></span>
+<span id="cb4-19" class="hljs-ln-code"><a href="#cb4-19"></a>  <span class="fu">theme_nhsr_demo</span>() <span class="sc">+</span></span>
+<span id="cb4-20" class="hljs-ln-code"><a href="#cb4-20"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> banana_colours)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-13-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-13-1.png" width="960"></a></p>
+<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-14-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-14-1.png" width="672"></a></p>
 </figure>
 </div>
 </div>
@@ -772,14 +824,10 @@
 <div>
 <ul>
 <li class="fragment">Know the colours are applied to the right data points!</li>
-<li class="fragment">Keep colour-data pairings consistent throughout the project
-<ul>
-<li class="fragment">Package up a default palette (more on this later!)</li>
-</ul></li>
-<li class="fragment">Reuse colours in the text
-<ul>
+<li class="fragment">Keep colour-data pairings consistent throughout the project</li>
+<li class="fragment">Package up a default palette</li>
+<li class="fragment">Reuse colours in the text</li>
 <li class="fragment"><code>ggtext::element_markdown()</code>- Level up your plots</li>
-</ul></li>
 </ul>
 </div>
 <div class="footer">
@@ -788,42 +836,22 @@
 </section>
 <section id="apply-colours-using-a-named-vector-12" class="slide level2">
 <h2><span style="color:#28A569">#3</span> - Apply colours using a named vector</h2>
-<blockquote>
-<p>What if I don’t know how many colours I need?</p>
-</blockquote>
-<div>
-<ul>
-<li class="fragment">Build more than you’re likely to need and allow <code>R</code> to pick them to maximise distance
-<ul>
-<li class="fragment">⚠️ It just picks e.g.&nbsp;#1, #4 and #9 in the order of your vector</li>
-</ul></li>
-<li class="fragment"><strong>Pick 2 or 3 anchor colours and let <code>R</code> interpolate</strong>
-<ul>
-<li class="fragment">Keeps “low”, “mid” and “high” consistent</li>
-</ul></li>
-</ul>
-</div>
-<!-- Demo with Claire (Forum + Ophelia) colours: -->
-<!-- 1, 3, 5, 9 <- keep same vibe  -->
-<!-- scale_colour_steps2 edac00 c0a7b2 624063 -->
-<!-- https://fleming.qi-cms.com/media/w720/news_listing/1.%20untitled%20(jean%20resting)_oil%20on%20canvas%20copy.jpg -->
-<!-- scale_colour_gradient2 -->
 </section>
 <section id="section-6" class="slide level2" data-auto-animate="true" data-background="#2C3D4F">
 <h2 data-id="quarto-animate-title"></h2>
-<h3 class="faded-small" id="use-colour-purposefully-11"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
-<h3 class="faded-small" id="let-others-help-you-11"><span style="color:#28A569">#2</span> - Let others help you</h3>
+<h3 class="faded-small" id="use-colour-purposefully-12"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
+<h3 class="faded-small" id="let-others-help-you-16"><span style="color:#28A569">#2</span> - Let others help you</h3>
 <h3 class="imitate-title" id="apply-colours-using-a-named-vector-13"><span style="color:#28A569">#3</span> - Apply colours using a named vector</h3>
 <h3 id="check-for-accessibility-6"><span style="color:#28A569">#4</span> - Check for accessibility</h3>
-<h3 id="package-up-as-a-default-palette-6"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
+<h3 id="package-up-as-a-default-palette-2"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
 </section>
 <section id="section-7" class="slide level2" data-auto-animate="true" data-background="#2C3D4F">
 <h2 data-id="quarto-animate-title"></h2>
-<h3 class="faded-small" id="use-colour-purposefully-12"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
-<h3 class="faded-small" id="let-others-help-you-12"><span style="color:#28A569">#2</span> - Let others help you</h3>
+<h3 class="faded-small" id="use-colour-purposefully-13"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
+<h3 class="faded-small" id="let-others-help-you-17"><span style="color:#28A569">#2</span> - Let others help you</h3>
 <h3 class="faded-small" id="apply-colours-using-a-named-vector-14"><span style="color:#28A569">#3</span> - Apply colours using a named vector</h3>
 <h3 class="imitate-title" id="check-for-accessibility-7"><span style="color:#28A569">#4</span> - Check for accessibility</h3>
-<h3 id="package-up-as-a-default-palette-7"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
+<h3 id="package-up-as-a-default-palette-3"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
 </section>
 <section id="check-for-accessibility-8" class="slide level2">
 <h2><span style="color:#28A569">#4</span> - Check for accessibility</h2>
@@ -840,17 +868,17 @@
 <section id="check-for-accessibility-9" class="slide level2">
 <h2><span style="color:#28A569">#4</span> - Check for accessibility</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>banana_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch quarto-figure-center"></section>
-<section id="check-for-accessibility-10" class="slide level2">
-<h2><span style="color:#28A569">#4</span> - Check for accessibility</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>colorblindr<span class="sc">::</span><span class="fu">cvd_grid</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>banana_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<section id="check-for-accessibility-10" class="slide level2">
+<h2><span style="color:#28A569">#4</span> - Check for accessibility</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>colorblindr<span class="sc">::</span><span class="fu">cvd_grid</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="check-for-accessibility-11" class="slide level2">
 <h2><span style="color:#28A569">#4</span> - Check for accessibility</h2>
 <p>Easiest way to do this? Build a palette that goes from a lighter colour to a darker colour.</p>
@@ -868,87 +896,235 @@
 </section>
 <section id="section-8" class="slide level2" data-auto-animate="true" data-background="#2C3D4F">
 <h2 data-id="quarto-animate-title"></h2>
-<h3 class="faded-small" id="use-colour-purposefully-13"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
-<h3 class="faded-small" id="let-others-help-you-13"><span style="color:#28A569">#2</span> - Let others help you</h3>
+<h3 class="faded-small" id="use-colour-purposefully-14"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
+<h3 class="faded-small" id="let-others-help-you-18"><span style="color:#28A569">#2</span> - Let others help you</h3>
 <h3 class="faded-small" id="apply-colours-using-a-named-vector-15"><span style="color:#28A569">#3</span> - Apply colours using a named vector</h3>
 <h3 class="imitate-title" id="check-for-accessibility-12"><span style="color:#28A569">#4</span> - Check for accessibility</h3>
-<h3 id="package-up-as-a-default-palette-8"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
+<h3 id="make-use-of-colour-interpolation-4"><span style="color:#28A569">#5</span> - Make use of colour interpolation</h3>
 </section>
 <section id="section-9" class="slide level2" data-auto-animate="true" data-background="#2C3D4F">
 <h2 data-id="quarto-animate-title"></h2>
-<h3 class="faded-small" id="use-colour-purposefully-14"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
-<h3 class="faded-small" id="let-others-help-you-14"><span style="color:#28A569">#2</span> - Let others help you</h3>
+<h3 class="faded-small" id="use-colour-purposefully-15"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
+<h3 class="faded-small" id="let-others-help-you-19"><span style="color:#28A569">#2</span> - Let others help you</h3>
 <h3 class="faded-small" id="apply-colours-using-a-named-vector-16"><span style="color:#28A569">#3</span> - Apply colours using a named vector</h3>
 <h3 class="faded-small" id="check-for-accessibility-13"><span style="color:#28A569">#4</span> - Check for accessibility</h3>
-<h3 class="imitate-title" id="package-up-as-a-default-palette-9"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
+<h3 class="imitate-title" id="make-use-of-colour-interpolation-5"><span style="color:#28A569">#5</span> - Make use of colour interpolation</h3>
 </section>
-<section id="package-up-as-a-default-palette-10" class="slide level2">
-<h2><span style="color:#28A569">#5</span> - Package up as a default palette</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>carartemplates<span class="sc">::</span><span class="fu">carar_colours</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>     green       blue  dark_text light_text 
- "#28A569"  "#2C3D4F"  "#1A242F"  "#808A95" </code></pre>
-</div>
-</div>
+<section id="make-use-of-colour-interpolation-6" class="slide level2">
+<h2><span style="color:#28A569">#5</span> - Make use of colour interpolation</h2>
 <div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>monochromeR<span class="sc">::</span><span class="fu">view_palette</span>(carartemplates<span class="sc">::</span><span class="fu">carar_colours</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote>
+<p>What if I don’t know how many colours I need?</p>
+</blockquote>
+</div>
+<div>
+<ul>
+<li class="fragment">Build more than you’re likely to need and allow <code>R</code> to pick colours to maximise distance</li>
+<li class="fragment">⚠️ It just picks e.g.&nbsp;#1, #5 and #9 in the order of your vector</li>
+<li class="fragment"><strong>Pick 2 or 3 anchor colours and let <code>R</code> interpolate</strong></li>
+<li class="fragment"><code>colorRampPalette()</code></li>
+</ul>
+</div>
+</section>
+<section id="make-use-of-colour-interpolation-7" class="slide level2">
+<h2><span style="color:#28A569">#5</span> - Make use of colour interpolation</h2>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="1|12-14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>my_anchor_colours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"green"</span>, <span class="st">"blue"</span>, <span class="st">"purple"</span>)</span>
+<span id="cb7-2"><a href="#cb7-2"></a></span>
+<span id="cb7-3"><a href="#cb7-3"></a>palmerpenguins<span class="sc">::</span>penguins <span class="sc">%&gt;%</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a>  <span class="fu">mutate</span>(<span class="at">island_fm =</span> <span class="fu">paste0</span>(island, sex)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span> </span>
+<span id="cb7-6"><a href="#cb7-6"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
+<span id="cb7-7"><a href="#cb7-7"></a>                 <span class="at">y =</span> bill_depth_mm,</span>
+<span id="cb7-8"><a href="#cb7-8"></a>                 <span class="at">colour =</span> island_fm,</span>
+<span id="cb7-9"><a href="#cb7-9"></a>                 <span class="at">size =</span> body_mass_g),</span>
+<span id="cb7-10"><a href="#cb7-10"></a>             <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb7-11"><a href="#cb7-11"></a>  <span class="fu">theme_nhsr_demo</span>() <span class="sc">+</span></span>
+<span id="cb7-12"><a href="#cb7-12"></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb7-13"><a href="#cb7-13"></a>    <span class="at">values =</span> <span class="fu">colorRampPalette</span>(</span>
+<span id="cb7-14"><a href="#cb7-14"></a>      my_anchor_colours)(<span class="dv">9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-17-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-17-1.png" width="960"></a></p>
+<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-17-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-17-1.png" width="681"></a></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="package-up-as-a-default-palette-11" class="slide level2">
-<h2><span style="color:#28A569">#5</span> - Package up as a default palette</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>ivac<span class="sc">::</span>ivac_default_palette</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$Overall
-[1] "#002D72"
+<section id="make-use-of-colour-interpolation-8" class="slide level2">
+<h2><span style="color:#28A569">#5</span> - Make use of colour interpolation</h2>
+<p><a href="https://imagecolorpicker.com/">imagecolorpicker.com</a> + <a href="https://www.vis4.net/palettes">Chroma.js Color Palette Helper</a></p>
 
-$Pneumonia
-[1] "#68ACE5"
-
-$Diarrhea
-[1] "#FF6900"</code></pre>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
+<img data-src="images/d7hftxdivxxvm.cloudfront.webp" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
+<section id="make-use-of-colour-interpolation-9" class="slide level2">
+<h2><span style="color:#28A569">#5</span> - Make use of colour interpolation</h2>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="1|11-13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>my_anchor_colours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"#4f3c78"</span>, <span class="st">"#d3970a"</span>, <span class="st">"#c0979c"</span>)</span>
+<span id="cb8-2"><a href="#cb8-2"></a></span>
+<span id="cb8-3"><a href="#cb8-3"></a>palmerpenguins<span class="sc">::</span>penguins <span class="sc">%&gt;%</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span> </span>
+<span id="cb8-5"><a href="#cb8-5"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
+<span id="cb8-6"><a href="#cb8-6"></a>                 <span class="at">y =</span> bill_depth_mm,</span>
+<span id="cb8-7"><a href="#cb8-7"></a>                 <span class="at">colour =</span> island,</span>
+<span id="cb8-8"><a href="#cb8-8"></a>                 <span class="at">size =</span> body_mass_g),</span>
+<span id="cb8-9"><a href="#cb8-9"></a>             <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb8-10"><a href="#cb8-10"></a>  <span class="fu">theme_nhsr_demo</span>() <span class="sc">+</span></span>
+<span id="cb8-11"><a href="#cb8-11"></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb8-12"><a href="#cb8-12"></a>    <span class="at">values =</span> <span class="fu">colorRampPalette</span>(</span>
+<span id="cb8-13"><a href="#cb8-13"></a>      my_anchor_colours)(<span class="dv">3</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-19-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></a></p>
+<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-18-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-18-1.png" width="681"></a></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="package-up-as-a-default-palette-12" class="slide level2">
-<h2><span style="color:#28A569">#5</span> - Package up as a default palette</h2>
+<section id="make-use-of-colour-interpolation-10" class="slide level2">
+<h2><span style="color:#28A569">#5</span> - Make use of colour interpolation</h2>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="12-14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>my_anchor_colours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"#4f3c78"</span>, <span class="st">"#d3970a"</span>, <span class="st">"#c0979c"</span>)</span>
+<span id="cb9-2"><a href="#cb9-2"></a></span>
+<span id="cb9-3"><a href="#cb9-3"></a>palmerpenguins<span class="sc">::</span>penguins <span class="sc">%&gt;%</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a>  <span class="fu">mutate</span>(<span class="at">island_fm =</span> <span class="fu">paste0</span>(island, sex)) <span class="sc">%&gt;%</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span> </span>
+<span id="cb9-6"><a href="#cb9-6"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
+<span id="cb9-7"><a href="#cb9-7"></a>                 <span class="at">y =</span> bill_depth_mm,</span>
+<span id="cb9-8"><a href="#cb9-8"></a>                 <span class="at">colour =</span> island_fm,</span>
+<span id="cb9-9"><a href="#cb9-9"></a>                 <span class="at">size =</span> body_mass_g),</span>
+<span id="cb9-10"><a href="#cb9-10"></a>             <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb9-11"><a href="#cb9-11"></a>  <span class="fu">theme_nhsr_demo</span>() <span class="sc">+</span></span>
+<span id="cb9-12"><a href="#cb9-12"></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb9-13"><a href="#cb9-13"></a>    <span class="at">values =</span> <span class="fu">colorRampPalette</span>(</span>
+<span id="cb9-14"><a href="#cb9-14"></a>      my_anchor_colours)(<span class="dv">9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-19-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-31"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-19-1.png" width="681"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="make-use-of-colour-interpolation-11" class="slide level2">
+<h2><span style="color:#28A569">#5</span> - Make use of colour interpolation</h2>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>my_anchor_colours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"#375248"</span>, <span class="st">"#d3970a"</span>, <span class="st">"#7691b1"</span>)</span>
+<span id="cb10-2"><a href="#cb10-2"></a></span>
+<span id="cb10-3"><a href="#cb10-3"></a>palmerpenguins<span class="sc">::</span>penguins <span class="sc">%&gt;%</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a>  <span class="fu">mutate</span>(<span class="at">island_fm =</span> <span class="fu">paste0</span>(island, sex)) <span class="sc">%&gt;%</span></span>
+<span id="cb10-5"><a href="#cb10-5"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span> </span>
+<span id="cb10-6"><a href="#cb10-6"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
+<span id="cb10-7"><a href="#cb10-7"></a>                 <span class="at">y =</span> bill_depth_mm,</span>
+<span id="cb10-8"><a href="#cb10-8"></a>                 <span class="at">colour =</span> island_fm,</span>
+<span id="cb10-9"><a href="#cb10-9"></a>                 <span class="at">size =</span> body_mass_g),</span>
+<span id="cb10-10"><a href="#cb10-10"></a>             <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb10-11"><a href="#cb10-11"></a>  <span class="fu">theme_nhsr_demo</span>() <span class="sc">+</span></span>
+<span id="cb10-12"><a href="#cb10-12"></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb10-13"><a href="#cb10-13"></a>    <span class="at">values =</span> <span class="fu">colorRampPalette</span>(</span>
+<span id="cb10-14"><a href="#cb10-14"></a>      my_anchor_colours)(<span class="dv">9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-20-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-32"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-20-1.png" width="681"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="make-use-of-colour-interpolation-12" class="slide level2">
+<h2><span style="color:#28A569">#5</span> - Make use of colour interpolation</h2>
+<p>There are only so many colours you can use in a plot!</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment">
+<ul>
+<li>Could other approaches work (facets?)</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Try using different shapes (you can use letters / emoji!)</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/202007c_pets.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-33"><img data-src="images/202007c_pets.gif"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>[<a href="https://github.com/cararthompson/tidytuesdays#2020-07---animals-and-pets">github.com/cararthompson/tidytuesdays</a></p>
+</div>
+</section>
+<section id="theres-so-much-more-we-could-talk-about" class="slide level2">
+<h2>There’s so much more we could talk about!</h2>
+<div class="fragment">
+<ul>
+<li>Packaging up your palette for easy reuse <code>carartemplates::carar_colours()</code></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="palatable-palettes_files/figure-revealjs/unnamed-chunk-21-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-34"><img data-src="palatable-palettes_files/figure-revealjs/unnamed-chunk-21-1.png" width="960"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<ul>
+<li>Creating your own <code>scale_nhsdemo_colour/fill()</code> functions</li>
+<li>You can even have several palettes! <code>scale_nhsdemo_colour("Birmingham")</code>?</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Basing your “dark text” colour on the central / most important colour in your palette</li>
+</ul>
+</div>
+<div class="fragment">
+<center>
+<strong>… but we can talk about this some other time!</strong>
+</center>
+</div>
 </section>
 <section id="five-tips-for-creating-and-applying-bespoke-colour-palettes" class="slide level2" data-background="#2C3D4F">
 <h2>Five tips for creating and applying bespoke colour palettes</h2>
-<h3 id="use-colour-purposefully-15"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
-<h3 id="let-others-help-you-15"><span style="color:#28A569">#2</span> - Let others help you</h3>
+<h3 id="use-colour-purposefully-16"><span style="color:#28A569">#1</span> - Use colour purposefully</h3>
+<h3 id="let-others-help-you-20"><span style="color:#28A569">#2</span> - Let others help you</h3>
 <h3 id="apply-colours-using-a-named-vector-17"><span style="color:#28A569">#3</span> - Apply colours using a named vector</h3>
 <h3 id="check-for-accessibility-14"><span style="color:#28A569">#4</span> - Check for accessibility</h3>
-<h3 id="package-up-as-a-default-palette-13"><span style="color:#28A569">#5</span> - Package up as a default palette</h3>
+<h3 id="make-use-of-colour-interpolation-13"><span style="color:#28A569">#5</span> - Make use of colour interpolation</h3>
 <p><br></p>
 <div class="fragment">
-<!-- -->
-<h3 id="over-to-you"><span style="color:#28A569">Over to you</span></h3>
+<center>
+<h3 id="happy-plotting"><span style="color:#28A569">Happy plotting!</span></h3>
+<h3 id="cararthompson"><span class="citation" data-cites="cararthompson">@cararthompson</span></h3>
+</center>
 </div>
 
 <img src="images/light-logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>Slides and full code: <a href="https://cararthompson.com/talks/nhsr2022-palatable-palettes">cararthompson.com/talks/nhsr2022-palatable-palettes</a></p>
+<p>Slides and recording: <a href="https://cararthompson.com/talks/nhsr2022-palatable-palettes">cararthompson.com/talks/nhsr2022-palatable-palettes</a></p>
 </div>
 </section></section>
     </div>
