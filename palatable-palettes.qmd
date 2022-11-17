@@ -953,7 +953,7 @@ There are only so many colours you can use in a plot!
 :::
 
 ::: footer
-[[github.com/cararthompson/tidytuesdays](https://github.com/cararthompson/tidytuesdays#2020-07---animals-and-pets)
+[github.com/cararthompson/tidytuesdays](https://github.com/cararthompson/tidytuesdays#2020-07---animals-and-pets)
 :::
 
 
