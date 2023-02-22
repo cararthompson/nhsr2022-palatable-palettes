@@ -131,7 +131,7 @@ penguin_plot +
 ```
 
 ::: footer
-Find out more: [cararthompson.com/talks/nhsr2022-ggplot-themes](cararthompson.com/talks/nhsr2022-ggplot-themes)
+Find out more: [cararthompson.com/talks/nhsr2022-ggplot-themes](https://www.cararthompson.com/talks/nhsr2022-ggplot-themes/)
 :::
 
 ## The Great Penguin Bake Off
